@@ -38,7 +38,7 @@ process PMULTIQC {
     echo ">>>>>>>>> Running Multiqc <<<<<<<<<"
     multiqc \\
         -f \\
-        --config multiqc_config.yml \\
+        --config results/multiqc_config.yml \\
         ${args} \\
         ${disable_pmultiqc} \\
         ${disable_table_plots} \\
